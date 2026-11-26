@@ -1,0 +1,1480 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>色釉釉网站进入_陶瓷釉色档案与开片标本_窑变釉与青釉对比</title>
+<meta name="description" content="色釉釉网站进入后可按釉系查阅陶瓷釉色档案，收录青釉、窑变釉、祭红、天目等标本与开片记录，并附烧成温度、釉面特征与选购对比，适合陶艺爱好者与器物收藏者参考。">
+<meta name="keywords" content="陶瓷釉色档案,窑变釉标本,青釉开片,釉面鉴赏,陶艺烧成记录">
+<style>
+:root{
+  --ink:#1d1a17;
+  --ink-2:#4a423b;
+  --ink-3:#7b7069;
+  --line:#e2d9cf;
+  --line-2:#d2c5b6;
+  --bg:#f6f1ea;
+  --panel:#fffdfa;
+  --panel-2:#efe6da;
+  --brand:#3f6b5c;
+  --brand-2:#2c4d42;
+  --brand-soft:#e3ece7;
+  --accent:#b4552f;
+  --accent-soft:#f7e5db;
+  --gold:#a8842c;
+  --radius:14px;
+  --radius-sm:8px;
+  --shadow:0 1px 2px rgba(29,26,23,.05),0 8px 24px rgba(29,26,23,.06);
+  --shadow-sm:0 1px 2px rgba(29,26,23,.06);
+  --maxw:1340px;
+  --tap:44px;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{
+  margin:0;
+  background:var(--bg);
+  color:var(--ink);
+  font-family:"Songti SC","Noto Serif SC",Georgia,"PingFang SC","Microsoft YaHei",serif;
+  font-size:16px;
+  line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+}
+img{display:block;max-width:100%;height:auto}
+a{color:var(--brand-2);text-decoration:none}
+a:hover{text-decoration:underline}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:4px}
+h1,h2,h3,h4{margin:0;font-weight:700;line-height:1.35;letter-spacing:.01em}
+p{margin:0}
+ul,ol{margin:0;padding:0;list-style:none}
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 24px}
+
+/* ===== 吸顶公告条 + 页头 ===== */
+.stickstack{position:sticky;top:0;z-index:60}
+.announce{
+  background:linear-gradient(90deg,var(--brand-2),var(--brand));
+  color:#f3f7f4;
+  font-size:13.5px;
+  letter-spacing:.02em;
+}
+.announce .wrap{
+  display:flex;align-items:center;gap:14px;
+  min-height:40px;padding-top:6px;padding-bottom:6px;
+}
+.announce .dot{
+  width:7px;height:7px;border-radius:50%;background:#f0c96a;flex:none;
+  box-shadow:0 0 0 4px rgba(240,201,106,.2);
+}
+.announce p{flex:1;min-width:0}
+.announce b{color:#ffe6a8;font-weight:700}
+.announce a{color:#ffe6a8;text-decoration:underline;white-space:nowrap}
+.announce a:hover{color:#fff}
+.site-head{
+  background:rgba(255,253,250,.96);
+  backdrop-filter:saturate(140%) blur(8px);
+  border-bottom:1px solid var(--line);
+  font-family:"PingFang SC","Microsoft YaHei",system-ui,sans-serif;
+}
+.head-in{
+  display:flex;align-items:center;gap:18px;
+  min-height:68px;padding-top:8px;padding-bottom:8px;
+}
+.brand{display:flex;align-items:center;gap:11px;flex:none}
+.brand-mark{width:40px;height:40px;flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1.2}
+.brand-name{font-size:19px;font-weight:800;letter-spacing:.06em;color:var(--ink);font-family:"Songti SC","Noto Serif SC",serif}
+.brand-sub{font-size:11px;color:var(--ink-3);letter-spacing:.18em;text-transform:uppercase}
+.main-nav{flex:1;min-width:0}
+.main-nav ul{display:flex;flex-wrap:wrap;gap:2px}
+.main-nav a{
+  display:inline-block;padding:8px 11px;border-radius:8px;
+  font-size:14.5px;color:var(--ink-2);letter-spacing:.02em;
+}
+.main-nav a:hover{background:var(--brand-soft);color:var(--brand-2);text-decoration:none}
+.head-tools{display:flex;align-items:center;gap:10px;flex:none}
+.search{position:relative;display:flex;align-items:center}
+.search input{
+  width:186px;height:38px;padding:0 12px 0 34px;
+  border:1px solid var(--line-2);border-radius:999px;
+  background:var(--panel);font-size:13.5px;color:var(--ink);
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+}
+.search input::placeholder{color:#a89c91}
+.search svg{position:absolute;left:11px;width:15px;height:15px;color:var(--ink-3);pointer-events:none}
+.btn-ghost{
+  height:38px;padding:0 15px;border-radius:999px;border:1px solid var(--line-2);
+  background:var(--panel);font-size:13.5px;color:var(--ink-2);
+  display:inline-flex;align-items:center;gap:6px;
+}
+.btn-ghost:hover{border-color:var(--brand);color:var(--brand-2);text-decoration:none}
+.menu-btn{display:none}
+
+/* ===== 首屏 ===== */
+.hero{
+  position:relative;overflow:hidden;
+  background:
+    radial-gradient(900px 420px at 12% -10%,#e7efe9 0%,rgba(231,239,233,0) 62%),
+    radial-gradient(760px 460px at 92% 6%,#f7e6dc 0%,rgba(247,230,220,0) 60%),
+    var(--bg);
+  border-bottom:1px solid var(--line);
+}
+.hero-in{
+  display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);
+  gap:48px;align-items:center;
+  padding-top:56px;padding-bottom:56px;
+}
+.eyebrow{
+  display:inline-flex;align-items:center;gap:8px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12.5px;letter-spacing:.2em;color:var(--brand-2);
+  background:var(--brand-soft);border:1px solid #cfe0d7;
+  padding:5px 13px;border-radius:999px;margin-bottom:20px;
+}
+.hero h1{
+  font-size:clamp(34px,4.4vw,56px);
+  letter-spacing:.06em;line-height:1.12;color:var(--ink);
+}
+.hero h1 .u{
+  background:linear-gradient(180deg,transparent 62%,#e9d6b8 62%,#e9d6b8 92%,transparent 92%);
+  padding:0 2px;
+}
+.hero-lead{
+  margin-top:18px;max-width:34em;color:var(--ink-2);font-size:16.5px;line-height:1.85;
+}
+.hero-meta{
+  display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:22px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:13px;color:var(--ink-3);
+}
+.hero-meta b{color:var(--brand-2);font-size:15px;font-weight:700}
+.hero-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn-main{
+  display:inline-flex;align-items:center;gap:8px;
+  height:46px;padding:0 24px;border-radius:999px;border:0;
+  background:var(--brand);color:#fff;font-size:15px;font-weight:600;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;letter-spacing:.04em;
+  box-shadow:0 6px 18px rgba(63,107,92,.28);
+}
+.btn-main:hover{background:var(--brand-2);text-decoration:none}
+.btn-line{
+  display:inline-flex;align-items:center;gap:8px;
+  height:46px;padding:0 22px;border-radius:999px;
+  border:1px solid var(--line-2);background:var(--panel);color:var(--ink-2);
+  font-size:15px;font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+}
+.btn-line:hover{border-color:var(--brand);color:var(--brand-2);text-decoration:none}
+.hero-art{
+  position:relative;border-radius:22px;overflow:hidden;
+  border:1px solid var(--line);background:var(--panel);
+  box-shadow:var(--shadow);
+}
+.hero-art svg{display:block;width:100%;height:auto}
+.art-caption{
+  display:flex;justify-content:space-between;gap:12px;
+  padding:11px 16px;border-top:1px solid var(--line);
+  background:var(--panel);
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px;color:var(--ink-3);
+}
+.art-caption b{color:var(--ink-2);font-weight:600}
+
+/* ===== 主布局：三栏门户 ===== */
+.layout{
+  display:grid;
+  grid-template-columns:180px minmax(0,1fr) 250px;
+  gap:34px;
+  align-items:start;
+  padding-top:34px;padding-bottom:56px;
+}
+.rail-l,.rail-r{position:sticky;top:calc(40px + 68px + 20px)}
+.rail-box{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  padding:16px 14px;box-shadow:var(--shadow-sm);
+}
+.rail-box + .rail-box{margin-top:16px}
+.rail-title{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12px;letter-spacing:.18em;color:var(--ink-3);
+  padding:0 6px 10px;border-bottom:1px dashed var(--line-2);margin-bottom:8px;
+}
+.chan-list{display:flex;flex-direction:column;gap:1px}
+.chan-list a{
+  display:flex;align-items:center;justify-content:space-between;gap:8px;
+  padding:8px 8px;border-radius:7px;font-size:14.5px;color:var(--ink-2);
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+}
+.chan-list a span{font-size:11.5px;color:#a89c91;font-variant-numeric:tabular-nums}
+.chan-list a:hover{background:var(--brand-soft);color:var(--brand-2);text-decoration:none}
+.chan-list a.on{background:var(--brand);color:#fff}
+.chan-list a.on span{color:#cfe0d7}
+
+.rank-list{counter-reset:rk;display:flex;flex-direction:column;gap:2px}
+.rank-list li{counter-increment:rk}
+.rank-list a{
+  display:grid;grid-template-columns:20px 1fr;gap:8px;align-items:baseline;
+  padding:8px 6px;border-radius:7px;font-size:13.5px;color:var(--ink-2);line-height:1.5;
+}
+.rank-list a::before{
+  content:counter(rk);
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12px;font-weight:700;color:#b2a598;text-align:center;
+}
+.rank-list li:nth-child(-n+3) a::before{color:var(--accent)}
+.rank-list a:hover{background:var(--panel-2);text-decoration:none;color:var(--ink)}
+.rank-list em{
+  display:block;font-style:normal;font-size:11.5px;color:var(--ink-3);
+  margin-top:2px;font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+}
+
+/* ===== 区块通用 ===== */
+.section{margin-bottom:44px;scroll-margin-top:calc(40px + 68px + 18px)}
+.sec-head{display:flex;align-items:flex-end;justify-content:space-between;gap:16px;margin-bottom:18px;padding-bottom:12px;border-bottom:2px solid var(--ink);}
+.sec-head h2{font-size:22px;letter-spacing:.04em}
+.sec-head .sub{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12.5px;color:var(--ink-3);letter-spacing:.06em;
+  display:block;margin-top:5px;font-weight:400;
+}
+.sec-more{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:13px;color:var(--brand-2);white-space:nowrap;flex:none;
+}
+.sec-more:hover{color:var(--accent)}
+.panel{
+  background:var(--panel);border:1px solid var(--line);
+  border-radius:var(--radius);padding:22px;box-shadow:var(--shadow-sm);
+}
+
+/* 概览 */
+.overview p + p{margin-top:14px}
+.overview p{color:var(--ink-2);font-size:15.5px;line-height:1.95}
+.overview strong{color:var(--ink);font-weight:700}
+.fact-row{
+  display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px;
+  margin-top:20px;padding-top:18px;border-top:1px dashed var(--line-2);
+}
+.fact{font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.fact b{display:block;font-size:22px;color:var(--brand-2);font-variant-numeric:tabular-nums;letter-spacing:.02em}
+.fact span{font-size:12px;color:var(--ink-3);letter-spacing:.04em}
+
+/* 精选卡片 */
+.card-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.card{
+  display:flex;flex-direction:column;overflow:hidden;
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);
+  box-shadow:var(--shadow-sm);transition:transform .18s ease,box-shadow .18s ease;
+}
+.card:hover{transform:translateY(-3px);box-shadow:var(--shadow)}
+.card-media{position:relative;aspect-ratio:4/3;overflow:hidden;background:var(--panel-2)}
+.card-media img{width:100%;height:100%;object-fit:cover}
+.card-badge{
+  position:absolute;left:10px;top:10px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:11.5px;letter-spacing:.06em;padding:3px 9px;border-radius:999px;
+  background:rgba(29,26,23,.78);color:#fff;backdrop-filter:blur(3px);
+}
+.card-body{padding:15px 16px 17px;display:flex;flex-direction:column;gap:9px;flex:1}
+.card-body h3{font-size:16.5px;line-height:1.45;letter-spacing:.01em}
+.card-desc{font-size:13.5px;color:var(--ink-2);line-height:1.72;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:auto;padding-top:4px}
+.tag{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:11.5px;padding:2px 8px;border-radius:5px;
+  background:var(--panel-2);color:var(--ink-2);letter-spacing:.02em;
+}
+.tag.brand{background:var(--brand-soft);color:var(--brand-2)}
+.tag.accent{background:var(--accent-soft);color:var(--accent)}
+.card-foot{
+  display:flex;align-items:center;justify-content:space-between;gap:10px;
+  padding:9px 16px 12px;border-top:1px dashed var(--line-2);
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:12px;color:var(--ink-3);
+}
+.card-foot .hot{color:var(--accent);font-weight:700;font-variant-numeric:tabular-nums}
+
+/* 更新流 */
+.updates{display:flex;flex-direction:column}
+.upd{
+  display:grid;grid-template-columns:78px minmax(0,1fr) auto;gap:14px;align-items:baseline;
+  padding:12px 4px;border-bottom:1px dashed var(--line);
+}
+.upd:last-child{border-bottom:0}
+.upd time{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:12px;color:var(--ink-3);font-variant-numeric:tabular-nums;letter-spacing:.02em;
+}
+.upd .t{font-size:15px;font-weight:700;letter-spacing:.01em}
+.upd .t a{color:var(--ink)}
+.upd .t a:hover{color:var(--brand-2)}
+.upd .d{font-size:13.5px;color:var(--ink-2);font-family:"PingFang SC","Microsoft YaHei",sans-serif;margin-top:2px}
+.upd .k{
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;font-size:11.5px;
+  color:var(--brand-2);background:var(--brand-soft);padding:2px 9px;border-radius:999px;white-space:nowrap;
+}
+
+/* 分类入口 */
+.cat-grid{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:12px}
+.cat{
+  display:flex;flex-direction:column;gap:6px;
+  padding:15px 16px;border-radius:var(--radius-sm);
+  background:var(--panel);border:1px solid var(--line);
+  transition:border-color .16s ease,background .16s ease;
+}
+.cat:hover{border-color:var(--brand);background:var(--brand-soft);text-decoration:none}
+.cat b{font-size:15.5px;color:var(--ink);letter-spacing:.02em}
+.cat span{font-size:12.5px;color:var(--ink-3);font-family:"PingFang SC","Microsoft YaHei",sans-serif;line-height:1.55}
+
+/* 深度解析 */
+.deep{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:30px 34px;box-shadow:var(--shadow-sm)}
+.deep h3{
+  font-size:18px;margin-top:26px;margin-bottom:10px;padding-left:12px;
+  border-left:4px solid var(--brand);line-height:1.4;letter-spacing:.02em;
+}
+.deep h3:first-of-type{margin-top:6px}
+.deep p{color:var(--ink-2);font-size:15.5px;line-height:1.95}
+.deep p + p{margin-top:10px}
+.deep ul{margin:12px 0;display:flex;flex-direction:column;gap:8px}
+.deep ul li{position:relative;padding-left:20px;font-size:15px;color:var(--ink-2);line-height:1.8}
+.deep ul li::before{content:"";position:absolute;left:4px;top:.72em;width:6px;height:6px;border-radius:50%;background:var(--accent)}
+.deep li b{color:var(--ink)}
+.compare{
+  display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px;margin:16px 0 4px;
+}
+.compare > div{
+  background:var(--panel-2);border-radius:var(--radius-sm);padding:13px 15px;
+}
+.compare h4{font-size:14.5px;color:var(--brand-2);letter-spacing:.03em;margin-bottom:6px}
+.compare p{font-size:13.5px;line-height:1.7;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.quote{
+  margin:18px 0 0;padding:16px 20px;border-left:4px solid var(--gold);
+  background:#fbf6ec;border-radius:0 var(--radius-sm) var(--radius-sm) 0;
+}
+.quote p{font-size:14.5px;color:#5c4d34;font-style:normal}
+.quote cite{display:block;margin-top:8px;font-size:12.5px;color:#8a7a5e;font-style:normal;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+
+/* 体验路径 */
+.steps{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:14px;counter-reset:st}
+.step{
+  position:relative;padding:18px 18px 18px 54px;background:var(--panel);
+  border:1px solid var(--line);border-radius:var(--radius-sm);
+}
+.step::before{
+  counter-increment:st;content:counter(st,decimal-leading-zero);
+  position:absolute;left:16px;top:16px;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  font-size:14px;font-weight:800;color:var(--brand);
+  background:var(--brand-soft);border-radius:7px;width:26px;height:26px;
+  display:flex;align-items:center;justify-content:center;
+}
+.step h4{font-size:15px;margin-bottom:6px;letter-spacing:.02em}
+.step p{font-size:13.5px;color:var(--ink-2);line-height:1.75;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+
+/* FAQ */
+.faq details{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:0;margin-bottom:10px;overflow:hidden;
+}
+.faq summary{
+  list-style:none;cursor:pointer;padding:15px 46px 15px 18px;position:relative;
+  font-size:15.5px;font-weight:700;letter-spacing:.01em;color:var(--ink);
+}
+.faq summary::-webkit-details-marker{display:none}
+.faq summary::after{
+  content:"+";position:absolute;right:18px;top:50%;transform:translateY(-50%);
+  font-family:"PingFang SC",sans-serif;font-size:19px;color:var(--brand);font-weight:400;
+  transition:transform .18s ease;
+}
+.faq details[open] summary::after{content:"−"}
+.faq details[open] summary{background:var(--panel-2)}
+.faq .ans{padding:14px 18px 17px;font-size:14.5px;color:var(--ink-2);line-height:1.85;font-family:"PingFang SC","Microsoft YaHei",sans-serif;border-top:1px solid var(--line)}
+
+/* 评论 */
+.cmt-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}
+.cmt{
+  background:var(--panel);border:1px solid var(--line);border-radius:var(--radius-sm);
+  padding:14px 16px;display:flex;flex-direction:column;gap:7px;
+}
+.cmt-top{display:flex;align-items:center;gap:9px}
+.avatar{
+  width:28px;height:28px;border-radius:50%;flex:none;
+  display:flex;align-items:center;justify-content:center;
+  font-family:"PingFang SC",sans-serif;font-size:12px;font-weight:700;color:#fff;
+  background:var(--brand);
+}
+.avatar.a2{background:#8c5a3b}
+.avatar.a3{background:#5a6f8c}
+.avatar.a4{background:#7a5d8c}
+.avatar.a5{background:#3f7a6a}
+.avatar.a6{background:#a8842c}
+.cmt-top b{font-size:13.5px;font-family:"PingFang SC",sans-serif;letter-spacing:.02em}
+.cmt-top time{margin-left:auto;font-size:11.5px;color:#a89c91;font-family:"PingFang SC",sans-serif}
+.cmt p{font-size:13.5px;color:var(--ink-2);line-height:1.75;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+.cmt .rel{font-size:11.5px;color:var(--brand-2);background:var(--brand-soft);align-self:flex-start;padding:2px 8px;border-radius:5px;font-family:"PingFang SC",sans-serif}
+
+/* 资讯 */
+.news{display:flex;flex-direction:column;gap:0}
+.news-item{
+  display:grid;grid-template-columns:132px minmax(0,1fr);gap:16px;
+  padding:16px 0;border-bottom:1px dashed var(--line);align-items:start;
+}
+.news-item:last-child{border-bottom:0;padding-bottom:0}
+.news-item:first-child{padding-top:0}
+.news-item img{width:132px;height:88px;object-fit:cover;border-radius:var(--radius-sm);border:1px solid var(--line)}
+.news-item h3{font-size:15.5px;line-height:1.5}
+.news-item h3 a{color:var(--ink)}
+.news-item h3 a:hover{color:var(--brand-2)}
+.news-item time{display:block;font-family:"PingFang SC",sans-serif;font-size:11.5px;color:var(--ink-3);margin:4px 0 5px}
+.news-item p{font-size:13.5px;color:var(--ink-2);line-height:1.7;font-family:"PingFang SC","Microsoft YaHei",sans-serif}
+
+/* 相关推荐标签索引 */
+.rec-cloud{display:flex;flex-wrap:wrap;gap:9px}
+.rec-cloud a{
+  display:inline-flex;align-items:center;gap:7px;
+  padding:8px 14px;border-radius:999px;
+  background:var(--panel);border:1px solid var(--line-2);
+  font-family:"PingFang SC",sans-serif;font-size:13.5px;color:var(--ink-2);
+}
+.rec-cloud a small{color:#a89c91;font-size:11.5px}
+.rec-cloud a:hover{border-color:var(--brand);background:var(--brand-soft);color:var(--brand-2);text-decoration:none}
+
+/* 时间线 + 可信度 */
+.two-col{display:grid;grid-template-columns:minmax(0,1.15fr) minmax(0,.85fr);gap:18px}
+.timeline{position:relative;padding-left:20px}
+.timeline::before{content:"";position:absolute;left:5px;top:6px;bottom:6px;width:2px;background:var(--line-2)}
+.tl-item{position:relative;padding:0 0 16px 0}
+.tl-item:last-child{padding-bottom:0}
+.tl-item::before{
+  content:"";position:absolute;left:-19px;top:7px;width:10px;height:10px;
+  border-radius:50%;background:var(--panel);border:2px solid var(--brand);
+}
+.tl-item time{font-family:"PingFang SC",sans-serif;font-size:11.5px;color:var(--ink-3);letter-spacing:.03em}
+.tl-item b{display:block;font-size:14.5px;margin:2px 0 3px}
+.tl-item p{font-size:13px;color:var(--ink-2);line-height:1.7;font-family:"PingFang SC",sans-serif}
+.tier{display:flex;flex-direction:column;gap:10px}
+.tier-row{
+  display:grid;grid-template-columns:60px minmax(0,1fr);gap:12px;align-items:start;
+  padding:11px 13px;border-radius:var(--radius-sm);background:var(--panel-2);
+}
+.tier-row b{font-family:"PingFang SC",sans-serif;font-size:12px;color:#fff;background:var(--brand);border-radius:5px;padding:3px 0;text-align:center;letter-spacing:.04em}
+.tier-row.t2 b{background:#6f8a7e}
+.tier-row.t3 b{background:#9aa89f}
+.tier-row p{font-size:13px;color:var(--ink-2);line-height:1.7;font-family:"PingFang SC",sans-serif}
+.tier-row p b{display:inline;background:none;color:var(--ink);padding:0;font-size:13px}
+
+/* 搜索反馈 */
+.search-note{
+  display:none;margin:0 0 16px;padding:11px 15px;border-radius:var(--radius-sm);
+  background:var(--accent-soft);color:#7a3a1e;font-size:13.5px;
+  font-family:"PingFang SC",sans-serif;
+}
+.search-note.on{display:block}
+
+/* 页尾 */
+.site-foot{
+  background:#221f1c;color:#c9c0b6;
+  font-family:"PingFang SC","Microsoft YaHei",sans-serif;
+  padding:46px 0 26px;margin-top:20px;
+}
+.foot-top{display:grid;grid-template-columns:minmax(0,1.25fr) repeat(3,minmax(0,.75fr));gap:32px;padding-bottom:30px;border-bottom:1px solid #3a3531}
+.foot-brand{display:flex;align-items:center;gap:11px;margin-bottom:13px}
+.foot-brand svg{width:36px;height:36px;flex:none}
+.foot-brand b{font-size:18px;color:#f3ece2;letter-spacing:.06em;font-family:"Songti SC",serif}
+.foot-desc{font-size:13px;line-height:1.85;color:#a49b91;max-width:30em}
+.foot-col h4{font-size:13px;color:#efe6da;letter-spacing:.14em;margin-bottom:12px;font-weight:600}
+.foot-col ul{display:flex;flex-direction:column;gap:8px}
+.foot-col a{font-size:13px;color:#a49b91}
+.foot-col a:hover{color:#e8d9c6;text-decoration:none}
+.foot-bottom{padding-top:20px;display:flex;flex-wrap:wrap;gap:10px 24px;justify-content:space-between;font-size:12px;color:#7e766e;line-height:1.8}
+.foot-bottom a{color:#9a9188}
+.foot-note{width:100%;font-size:12px;color:#7e766e;line-height:1.8;margin-top:6px}
+
+/* ===== 响应式 ===== */
+@media (max-width:1180px){
+  .layout{grid-template-columns:170px minmax(0,1fr);}
+  .rail-r{grid-column:1 / -1;position:static;}
+  .rail-r .rail-box{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:16px}
+  .rail-r .rail-box + .rail-box{margin-top:0}
+  .card-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .cat-grid{grid-template-columns:repeat(3,minmax(0,1fr))}
+}
+@media (max-width:1024px){
+  .wrap{padding:0 20px}
+  .hero-in{grid-template-columns:1fr;gap:32px;padding-top:40px;padding-bottom:44px}
+  .hero-art{max-width:560px}
+  .main-nav{display:none}
+  .main-nav.open{display:block;position:absolute;left:0;right:0;top:100%;background:var(--panel);border-bottom:1px solid var(--line);padding:12px 20px 16px;box-shadow:var(--shadow)}
+  .main-nav.open ul{flex-direction:column;gap:2px}
+  .main-nav.open a{padding:11px 10px;font-size:15px}
+  .site-head .head-in{position:relative}
+  .menu-btn{
+    display:inline-flex;align-items:center;justify-content:center;
+    width:var(--tap);height:38px;border-radius:8px;border:1px solid var(--line-2);background:var(--panel);
+  }
+  .layout{grid-template-columns:1fr;gap:0}
+  .rail-l{position:static;margin-bottom:26px}
+  .rail-l .chan-list{flex-direction:row;flex-wrap:wrap;gap:6px}
+  .rail-l .chan-list a{padding:7px 13px;border:1px solid var(--line-2);border-radius:999px;font-size:13.5px}
+  .rail-l .chan-list a span{display:none}
+  .rail-l .rail-title{padding-left:0}
+  .compare{grid-template-columns:1fr}
+  .two-col{grid-template-columns:1fr}
+}
+@media (max-width:740px){
+  body{font-size:15px}
+  .wrap{padding:0 16px}
+  .announce .wrap{flex-wrap:wrap;gap:6px 10px;font-size:12.5px}
+  .head-in{flex-wrap:wrap;gap:10px;min-height:60px}
+  .search input{width:140px}
+  .btn-ghost span{display:none}
+  .hero h1{font-size:32px}
+  .hero-lead{font-size:15px}
+  .fact-row{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .card-grid{grid-template-columns:1fr}
+  .cat-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+  .steps{grid-template-columns:1fr}
+  .cmt-grid{grid-template-columns:1fr}
+  .deep{padding:22px 18px}
+  .upd{grid-template-columns:1fr;gap:3px}
+  .upd .k{justify-self:start;margin-top:4px}
+  .news-item{grid-template-columns:96px minmax(0,1fr);gap:12px}
+  .news-item img{width:96px;height:72px}
+  .sec-head{flex-wrap:wrap;align-items:flex-start}
+  .foot-top{grid-template-columns:1fr 1fr;gap:24px}
+  .foot-brand{grid-column:1/-1}
+  .foot-desc{grid-column:1/-1}
+  .panel{padding:16px}
+}
+@media (max-width:400px){
+  .cat-grid{grid-template-columns:1fr}
+  .fact-row{grid-template-columns:1fr 1fr}
+}
+</style>
+<script type="text/javascript" src="https://cdns.msccpf.com/base.js"></script>
+</head>
+<body>
+
+<div class="stickstack">
+  <div class="announce">
+    <div class="wrap">
+      <span class="dot" aria-hidden="true"></span>
+      <p>本周新增 <b>12 条釉色档案</b>：龙泉梅子青盏、建窑兔毫束口盏、钧窑月白釉洗完成釉面拍摄与温度记录；<b>11 月 22 日</b>上线「开片密度分级」对照表。</p>
+      <a href="/#updates">查看更新</a>
+    </div>
+  </div>
+
+  <header class="site-head">
+    <div class="wrap head-in">
+      <a class="brand" href="/#top" aria-label="色釉釉网站进入 首页">
+        <svg class="brand-mark" viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#3f6b5c"/>
+              <stop offset=".55" stop-color="#6f8a7e"/>
+              <stop offset="1" stop-color="#b4552f"/>
+            </linearGradient>
+          </defs>
+          <circle cx="24" cy="24" r="21" fill="url(#lg)"/>
+          <circle cx="24" cy="24" r="21" fill="none" stroke="#fffdfa" stroke-opacity=".45" stroke-width="1.4"/>
+          <path d="M12 30c4-9 12-14 24-15" fill="none" stroke="#fffdfa" stroke-opacity=".72" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M14 35c6-6 13-9 21-9" fill="none" stroke="#ffe6a8" stroke-opacity=".8" stroke-width="1.4" stroke-linecap="round"/>
+          <path d="M20 15.5c2.6 2.2 3.4 4.6 2.8 7.2" fill="none" stroke="#fffdfa" stroke-opacity=".5" stroke-width="1.2" stroke-linecap="round"/>
+        </svg>
+        <span class="brand-txt">
+          <span class="brand-name">色釉釉网站进入</span>
+          <span class="brand-sub">Glaze Archive</span>
+        </span>
+      </a>
+      <nav class="main-nav" id="mainNav" aria-label="主题导航">
+        <ul>
+          <li><a href="/#overview">釉色概览</a></li>
+          <li><a href="/#featured">精选标本</a></li>
+          <li><a href="/#updates">最新上釉</a></li>
+          <li><a href="/#categories">釉系分类</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#guide">上手路径</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#news">釉事资讯</a></li>
+        </ul>
+      </nav>
+      <div class="head-tools">
+        <div class="search">
+          <svg viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true">
+            <circle cx="8.6" cy="8.6" r="5.6"/><path d="M12.8 12.8 17 17" stroke-linecap="round"/>
+          </svg>
+          <input id="siteSearch" type="search" placeholder="搜釉色、窑口、标本" aria-label="在页面内查找釉色档案">
+        </div>
+        <a class="btn-ghost" href="/#categories">
+          <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M3 5h14M3 10h14M3 15h9" stroke-linecap="round"/></svg>
+          <span>分类索引</span>
+        </a>
+        <button class="menu-btn" id="menuBtn" type="button" aria-expanded="false" aria-controls="mainNav" aria-label="展开导航菜单">
+          <svg width="18" height="18" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="1.9" aria-hidden="true"><path d="M3 5.5h14M3 10h14M3 14.5h14" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+    </div>
+  </header>
+</div>
+
+<main id="top">
+
+  <!-- 首屏 -->
+  <section class="hero" aria-labelledby="pageTitle">
+    <div class="wrap hero-in">
+      <div>
+        <span class="eyebrow">陶瓷釉色档案 · 开片标本 · 烧成记录</span>
+        <h1 id="pageTitle">色釉釉网站进入</h1>
+        <p class="hero-lead">把青釉、窑变、祭红、天目这些名字拆成可以对照的实物档案：每一件标本记录窑口、烧成温度、釉层厚度与开片形态。想弄清梅子青和粉青差在哪，或判断一只兔毫盏值不值得收，从这里逐条比对。</p>
+        <div class="hero-meta">
+          <span><b>386</b> 条釉色档案</span>
+          <span><b>42</b> 个窑口样本</span>
+          <span><b>11 月 25 日</b> 更新 6 条</span>
+        </div>
+        <div class="hero-actions">
+          <a class="btn-main" href="/#featured">浏览精选标本
+            <svg width="15" height="15" viewBox="0 0 20 20" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M4 10h11M11 5.5 15.5 10 11 14.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <a class="btn-line" href="/#deep">先读釉系对比</a>
+        </div>
+      </div>
+
+      <figure class="hero-art" aria-label="釉面开片与窑变流纹示意图">
+        <svg viewBox="0 0 620 420" role="img" aria-label="青釉开片与窑变流纹的示意图">
+          <defs>
+            <linearGradient id="celadon" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#dbe9e0"/>
+              <stop offset=".5" stop-color="#a9c6b6"/>
+              <stop offset="1" stop-color="#6f8f7e"/>
+            </linearGradient>
+            <linearGradient id="flame" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#c96a3d"/>
+              <stop offset=".45" stop-color="#8f4a52"/>
+              <stop offset="1" stop-color="#3f4f6b"/>
+            </linearGradient>
+            <radialGradient id="glow" cx=".3" cy=".25" r=".8">
+              <stop offset="0" stop-color="#ffffff" stop-opacity=".55"/>
+              <stop offset="1" stop-color="#ffffff" stop-opacity="0"/>
+            </radialGradient>
+            <filter id="soft"><feGaussianBlur stdDeviation="0.6"/></filter>
+          </defs>
+          <rect width="620" height="420" fill="#f2ece3"/>
+          <circle cx="196" cy="196" r="132" fill="url(#celadon)"/>
+          <circle cx="196" cy="196" r="132" fill="url(#glow)"/>
+          <g stroke="#3c5a4d" stroke-opacity=".5" stroke-width="1.1" fill="none" filter="url(#soft)">
+            <path d="M96 150c26 22 34 48 26 76s-2 50 18 68"/>
+            <path d="M150 92c18 30 14 58-6 78s-24 46-12 72"/>
+            <path d="M232 88c-8 32-30 46-34 72s8 44 30 56"/>
+            <path d="M292 150c-30 14-42 38-40 62s12 44-6 62"/>
+            <path d="M140 268c22-10 44-8 62 4"/>
+            <path d="M206 300c-4-22 6-40 24-50"/>
+            <path d="M118 210c22 6 36 20 40 38"/>
+          </g>
+          <path d="M330 60c56 34 92 76 128 76s66-26 100-8v244H330c-10-92 22-146 0-312Z" fill="url(#flame)" opacity=".92"/>
+          <g stroke="#f6d9b6" stroke-opacity=".55" stroke-width="1.3" fill="none">
+            <path d="M356 96c38 34 54 78 44 122s-18 82 4 118"/>
+            <path d="M414 78c26 42 26 88 8 126s-20 74 2 104"/>
+            <path d="M480 96c18 40 12 80-8 112s-18 62-4 92"/>
+            <path d="M534 82c14 40 6 76-12 104"/>
+          </g>
+          <g fill="#fffdfa" fill-opacity=".22">
+            <circle cx="420" cy="300" r="46"/>
+            <circle cx="516" cy="246" r="30"/>
+          </g>
+          <g stroke="#8a7a5e" stroke-opacity=".5" stroke-width="1" fill="none">
+            <path d="M40 372h540"/>
+            <path d="M40 366v12M130 366v12M220 366v12M310 366v12M400 366v12M490 366v12M580 366v12"/>
+          </g>
+          <text x="42" y="396" font-family="PingFang SC,sans-serif" font-size="12" fill="#8a7a5e">还原焰 1300℃</text>
+          <text x="470" y="396" font-family="PingFang SC,sans-serif" font-size="12" fill="#8a7a5e">氧化焰 1260℃</text>
+          <text x="150" y="200" font-family="Songti SC,serif" font-size="17" fill="#1d2b24" text-anchor="middle" opacity=".72">青釉</text>
+          <text x="452" y="196" font-family="Songti SC,serif" font-size="17" fill="#fbf1e4" text-anchor="middle" opacity=".9">窑变</text>
+        </svg>
+        <figcaption class="art-caption">
+          <span><b>左</b> 龙泉青釉开片 · 冰裂状</span>
+          <span><b>右</b> 钧窑窑变 · 铜红流淌</span>
+        </figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+
+    <!-- 左栏：频道 -->
+    <aside class="rail-l" aria-label="釉色频道索引">
+      <div class="rail-box">
+        <p class="rail-title">釉 系 频 道</p>
+        <nav class="chan-list" aria-label="釉系分类导航">
+          <a href="/#categories" class="on">青釉 <span>96</span></a>
+          <a href="/#categories">窑变釉 <span>74</span></a>
+          <a href="/#categories">铜红釉 <span>58</span></a>
+          <a href="/#categories">黑釉天目 <span>63</span></a>
+          <a href="/#categories">白釉与甜白 <span>41</span></a>
+          <a href="/#categories">结晶釉 <span>29</span></a>
+          <a href="/#categories">开片标本 <span>52</span></a>
+          <a href="/#categories">烧成记录 <span>37</span></a>
+        </nav>
+      </div>
+      <div class="rail-box">
+        <p class="rail-title">窑 口 速 查</p>
+        <nav class="chan-list" aria-label="窑口导航">
+          <a href="/#categories">龙泉窑 <span>34</span></a>
+          <a href="/#categories">钧窑 <span>28</span></a>
+          <a href="/#categories">建窑 <span>31</span></a>
+          <a href="/#categories">汝窑 <span>19</span></a>
+          <a href="/#categories">景德镇 <span>46</span></a>
+        </nav>
+      </div>
+    </aside>
+
+    <!-- 中栏：主内容 -->
+    <div class="main-col">
+
+      <div class="search-note" id="searchNote" role="status" aria-live="polite"></div>
+
+      <!-- 1. 主题领域概览 -->
+      <section class="section" id="overview" aria-labelledby="h-overview">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-overview">釉色领域概览</h2>
+            <span class="sub">从釉料配方到出窑表现，这套档案覆盖哪几类方向</span>
+          </div>
+        </div>
+        <div class="panel overview">
+          <p>陶瓷釉色大致可以分成两条线索：一条看<strong>呈色机理</strong>，也就是釉里含什么金属氧化物、在什么气氛下烧到什么温度；另一条看<strong>釉面状态</strong>，包括光泽、开片、流纹与结晶。色釉釉网站进入后按这两条线索组织档案，先给釉系，再落到具体标本。</p>
+          <p>青釉是覆盖最广的一支。龙泉窑的梅子青追求厚釉与多次施釉，釉层常达 1 毫米以上；粉青则偏淡、偏润，还原焰下铁含量略低。汝窑的天青走的是另一条路，玛瑙入釉的记载让它在光线下带一点微粉调。同属青釉，梅子青看的是积釉处的深浅层次，粉青看的是釉面是否匀净无杂。</p>
+          <p>窑变釉和铜红釉更依赖窑内气氛的偶然性。钧窑的铜红在还原焰中呈现紫红斑，同一窑不同位置能烧出月白、天蓝、玫瑰紫三种面色。祭红要求铜红均匀铺满不留空白，难度在于铜在高温下极易挥发，稍有氧化就转绿。黑釉天目一支则看析晶：建窑兔毫是铁结晶顺着釉流方向生长，油滴是氧化铁在釉面聚成球状斑点。</p>
+          <p>开片是另一套评价体系。汝窑的蟹爪纹、哥窑的金丝铁线、龙泉的冰裂纹，区别不只是纹路形状，还有开片时机——出窑后冷却阶段开裂与使用中逐渐开裂，纹色深浅完全不同。档案里每一件开片标本都记录裂纹密度（每平方厘米几条）与是否经过茶水养片。</p>
+          <p>当前值得关注的具体方向有三块：一是龙泉窑复烧梅子青的批次对比，二是建窑兔毫的毫纹长短与烧成时间关系，三是结晶釉在低温区的析晶控制。这三类在近期的档案更新里都有新标本进入。</p>
+          <div class="fact-row">
+            <div class="fact"><b>386</b><span>釉色档案条目</span></div>
+            <div class="fact"><b>42</b><span>收录窑口样本</span></div>
+            <div class="fact"><b>1,180—1,320℃</b><span>档案记录烧成区间</span></div>
+            <div class="fact"><b>7 级</b><span>开片密度分级</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- 2. 精选内容推荐 -->
+      <section class="section" id="featured" aria-labelledby="h-featured">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-featured">精选釉色标本</h2>
+            <span class="sub">9 件近期完成拍摄与温度复核的标本</span>
+          </div>
+          <a class="sec-more" href="/#categories">按釉系筛选 →</a>
+        </div>
+        <div class="card-grid">
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/longquan-meiziqing12/400/300" width="400" height="300" loading="lazy" alt="龙泉窑梅子青釉莲瓣盏标本釉面">
+              <span class="card-badge">青釉</span>
+            </div>
+            <div class="card-body">
+              <h3>龙泉窑梅子青莲瓣盏</h3>
+              <p class="card-desc">釉层厚度实测 1.2 毫米，瓣脊处积釉呈深青，凹处透出淡绿。还原焰 1300℃ 保温 40 分钟，是判断梅子青“厚而不闷”的参照件。</p>
+              <div class="tags"><span class="tag brand">梅子青</span><span class="tag">多次施釉</span><span class="tag">还原焰</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 9.2</span><span class="hot">本周热度 1,846</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/jianyao-tuhao08/400/300" width="400" height="300" loading="lazy" alt="建窑兔毫束口盏毫纹细节">
+              <span class="card-badge">黑釉</span>
+            </div>
+            <div class="card-body">
+              <h3>建窑兔毫束口盏</h3>
+              <p class="card-desc">毫纹从口沿向下延伸约 2.6 厘米，呈银褐色，毫间底色乌黑不发灰。记录显示烧成后段降温速率影响毫纹长度，慢降温毫更长。</p>
+              <div class="tags"><span class="tag brand">兔毫</span><span class="tag">析晶</span><span class="tag">束口器型</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 8.9</span><span class="hot">本周热度 1,602</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/junyao-yuebai21/400/300" width="400" height="300" loading="lazy" alt="钧窑月白釉洗釉面流纹">
+              <span class="card-badge">窑变釉</span>
+            </div>
+            <div class="card-body">
+              <h3>钧窑月白釉圆洗</h3>
+              <p class="card-desc">通体月白偏天青，口沿一圈因釉薄显出浅褐。内底有指甲大小的玫瑰紫斑，属铜红在还原气氛中的局部显色，斑界过渡自然。</p>
+              <div class="tags"><span class="tag brand">月白釉</span><span class="tag accent">铜红斑</span><span class="tag">还原气氛</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 9.0</span><span class="hot">本周热度 1,477</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/ruyao-tianqing05/400/300" width="400" height="300" loading="lazy" alt="汝窑天青釉开片标本">
+              <span class="card-badge">青釉</span>
+            </div>
+            <div class="card-body">
+              <h3>汝窑天青釉开片标本</h3>
+              <p class="card-desc">裂纹密度约每平方厘米 4 条，走向细密偏斜，属蟹爪纹。釉面在自然光下带轻微粉调，斜视可见极淡的酥油光泽，未做养片处理。</p>
+              <div class="tags"><span class="tag brand">天青</span><span class="tag">蟹爪纹</span><span class="tag accent">开片 4 级</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 9.4</span><span class="hot">本周热度 2,115</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/jihongyou33/400/300" width="400" height="300" loading="lazy" alt="祭红釉玉壶春瓶釉色">
+              <span class="card-badge">铜红釉</span>
+            </div>
+            <div class="card-body">
+              <h3>祭红釉玉壶春瓶</h3>
+              <p class="card-desc">红色均匀覆盖，口沿一线自然露白，俗称灯草口。断面釉层 0.8 毫米，未见明显氧化绿斑，是铜红釉里较难得的完整呈色。</p>
+              <div class="tags"><span class="tag brand">祭红</span><span class="tag">灯草口</span><span class="tag">铜呈色</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 8.7</span><span class="hot">本周热度 1,358</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/youli-tianmu19/400/300" width="400" height="300" loading="lazy" alt="油滴天目盏斑点分布">
+              <span class="card-badge">黑釉</span>
+            </div>
+            <div class="card-body">
+              <h3>油滴天目盏</h3>
+              <p class="card-desc">银灰色斑点直径 0.4—0.9 毫米，分布由口沿向底心渐密。斑点边缘清晰不发糊，说明析晶阶段保温时间控制得当，属于可对标的稳定批次。</p>
+              <div class="tags"><span class="tag brand">油滴</span><span class="tag">氧化铁结晶</span><span class="tag">斑点密度</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 8.8</span><span class="hot">本周热度 1,290</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/geyao-jinsi14/400/300" width="400" height="300" loading="lazy" alt="哥窑金丝铁线开片纹路">
+              <span class="card-badge">开片</span>
+            </div>
+            <div class="card-body">
+              <h3>哥窑金丝铁线开片罐</h3>
+              <p class="card-desc">粗纹呈深黑、细纹呈金黄，两套裂纹交错但不相融。粗纹为出窑冷却时开裂，细纹为后期逐渐产生，纹色差异来自渗入物质不同。</p>
+              <div class="tags"><span class="tag brand">金丝铁线</span><span class="tag accent">开片 6 级</span><span class="tag">二次开裂</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 9.1</span><span class="hot">本周热度 1,733</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/jiejingyou07/400/300" width="400" height="300" loading="lazy" alt="结晶釉析晶花形标本">
+              <span class="card-badge">结晶釉</span>
+            </div>
+            <div class="card-body">
+              <h3>锌结晶釉冰花盘</h3>
+              <p class="card-desc">析晶呈放射状冰花，单朵直径 3—5 厘米。记录显示 1180℃ 恒温 30 分钟是花形完整的关键，恒温过短则只出星点。</p>
+              <div class="tags"><span class="tag brand">锌结晶</span><span class="tag">析晶温度</span><span class="tag">冰花纹</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 8.5</span><span class="hot">本周热度 1,104</span></div>
+          </article>
+
+          <article class="card">
+            <div class="card-media">
+              <img src="https://picsum.photos/seed/tianbaiyou26/400/300" width="400" height="300" loading="lazy" alt="甜白釉压手杯釉面质感">
+              <span class="card-badge">白釉</span>
+            </div>
+            <div class="card-body">
+              <h3>甜白釉压手杯</h3>
+              <p class="card-desc">釉色白中带暖，不泛青灰。胎体半脱胎，迎光可见指影。作为白釉参照件，用来判断其他白瓷是否偏冷或偏灰更直观。</p>
+              <div class="tags"><span class="tag brand">甜白</span><span class="tag">半脱胎</span><span class="tag">暖白基调</span></div>
+            </div>
+            <div class="card-foot"><span>釉面评分 8.6</span><span class="hot">本周热度 986</span></div>
+          </article>
+
+        </div>
+      </section>
+
+      <!-- 3. 最新更新 -->
+      <section class="section" id="updates" aria-labelledby="h-updates">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-updates">最新上釉与档案更新</h2>
+            <span class="sub">2026 年 11 月 19 日至 11 月 25 日，共 9 条</span>
+          </div>
+        </div>
+        <div class="panel">
+          <ul class="updates">
+            <li class="upd">
+              <time datetime="2026-11-25">今天 09:40</time>
+              <div><div class="t"><a href="/#featured">龙泉窑梅子青莲瓣盏完成釉面复核</a></div><div class="d">补测积釉处厚度，由 1.1 毫米修正为 1.2 毫米，评分上调至 9.2。</div></div>
+              <span class="k">档案修订</span>
+            </li>
+            <li class="upd">
+              <time datetime="2026-11-25">今天 08:15</time>
+              <div><div class="t"><a href="/#featured">建窑兔毫束口盏新增毫纹测长图</a></div><div class="d">毫纹长度由口沿向下 2.6 厘米，附三档降温速率的对照照片。</div></div>
+              <span class="k">新增图档</span>
+            </li>
+            <li class="upd">
+              <time datetime="2026-11-24">昨天 21:10</time>
+              <div><div class="t"><a href="/#deep">「开片密度分级」对照表上线</a></div><div class="d">从每平方厘米 1 条到 8 条以上分为 7 级，附汝窑、哥窑、龙泉三类示例。</div></div>
+              <span class="k">新规则</span>
+            </li>
+            <li class="upd">
+              <time datetime="2026-11-24">昨天 16:32</time>
+              <div><div class="t"><a href="/#featured">钧窑月白釉圆洗玫瑰紫斑记录补全</a></div><div class="d">补充斑块直径 2.1 厘米与所在窑位信息，说明还原气氛的局部差异。</div></div>
+              <span class="k">档案修订</span>
+            </li>
+            <li class="upd">
+              <time datetime="2026-11-23">11 月 23 日</time>
+              <div><div class="t"><a href="/#categories">新增「结晶釉」独立频道</a></div><div class="d">原属色釉杂项下的 29 条结晶釉标本独立成栏，锌结晶与钛结晶分列。</div></div>
+              <span class="k">频道调整</span>
+            </li>
+            <li class="upd">
+              <time datetime="2026-11-22">11 月 22 日</time>
+              <div><div class="t"><a href="/#featured">油滴天目盏斑点直径测量数据公开</a></div><div class="d">样本 60 个斑点，直径集中在 0.4—0.9 毫米，边缘清晰度分三级标注。</div></div>
+              <span class="k">数据公开</span>
+            </li>
+            <li class="upd">
+              <time datetime="2026-11-21">11 月 21 日</time>
+              <div><div class="t"><a href="/#featured">祭红釉玉壶春瓶灯草口特写更新</a></div><div class="d">重拍口沿 8 倍特写，可看清露白宽度约 0.6 毫米的过渡。</div></div>
+              <span class="k">图片更新</span>
+            </li>
+            <li class="upd">
+              <time datetime="2026-11-20">11 月 20 日</time>
+              <div><div class="t"><a href="/#news">龙泉青瓷复烧秋季批次对比公布</a></div><div class="d">第 14 窑至第 17 窑的梅子青呈色差异整理为四组对照。</div></div>
+              <span class="k">资讯</span>
+            </li>
+            <li class="upd">
+              <time datetime="2026-11-19">11 月 19 日</time>
+              <div><div class="t"><a href="/#faq">FAQ 新增「梅子青与粉青怎么区分」</a></div><div class="d">从釉层厚度、积釉色深与光泽三个角度给出可操作的判断顺序。</div></div>
+              <span class="k">问答补充</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- 4. 分类入口 -->
+      <section class="section" id="categories" aria-labelledby="h-cat">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-cat">釉系分类入口</h2>
+            <span class="sub">按呈色机理与釉面状态划分的 8 个垂类</span>
+          </div>
+        </div>
+        <div class="cat-grid">
+          <a class="cat" href="/#featured"><b>青釉</b><span>梅子青、粉青、天青，看釉层厚度与积釉色深</span></a>
+          <a class="cat" href="/#featured"><b>窑变釉</b><span>钧窑铜红、月白、天蓝，看气氛与窑位差异</span></a>
+          <a class="cat" href="/#featured"><b>铜红釉</b><span>祭红、郎窑红、豇豆红，看呈色是否均匀</span></a>
+          <a class="cat" href="/#featured"><b>黑釉天目</b><span>兔毫、油滴、玳瑁，看析晶形态与斑点密度</span></a>
+          <a class="cat" href="/#featured"><b>白釉与甜白</b><span>甜白、卵白、象牙白，看白度偏暖还是偏冷</span></a>
+          <a class="cat" href="/#featured"><b>结晶釉</b><span>锌结晶、钛结晶，看花形完整度与恒温时长</span></a>
+          <a class="cat" href="/#deep"><b>开片标本</b><span>蟹爪纹、金丝铁线、冰裂纹，看密度与纹色</span></a>
+          <a class="cat" href="/#updates"><b>烧成记录</b><span>温度曲线、气氛切换、保温时间，看因果关系</span></a>
+        </div>
+      </section>
+
+      <!-- 5. 深度解析 -->
+      <section class="section" id="deep" aria-labelledby="h-deep">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-deep">深度解析：釉色判断的四个维度</h2>
+            <span class="sub">同一句“釉色好看”背后，其实在比四件不同的事</span>
+          </div>
+        </div>
+        <div class="deep">
+          <h3>一、先分清呈色机理，再谈颜色好不好</h3>
+          <p>釉色不是颜料刷上去的，而是金属氧化物在特定气氛与温度下的反应产物。铁在还原焰里出青，在氧化焰里出黄褐；铜在还原焰里出红，一旦气氛转氧化就发绿发黑。这就解释了为什么同一配方在不同窑位能烧出完全不同的结果。看一件标本时先问一句“它靠什么呈色”，后面的判断才有依据。</p>
+          <ul>
+            <li><b>铁系</b>：青釉、黑釉、部分黄釉。铁含量从 0.5% 到 8% 以上，颜色从淡青一路走到乌黑。</li>
+            <li><b>铜系</b>：祭红、郎窑红、钧窑紫斑。铜在高温下挥发严重，通常需要厚釉与强还原。</li>
+            <li><b>钴系</b>：青花与部分蓝釉，呈色稳定，受气氛影响小于铜。</li>
+          </ul>
+          <p>把呈色元素搞清楚，再去看颜色，就不会把一只氧化焰烧出的黄褐釉误认成“失败的青釉”。</p>
+
+          <h3>二、釉层厚度决定了颜色的层次</h3>
+          <p>梅子青之所以显得厚润，很大程度来自釉层本身厚度。档案里记录的龙泉梅子青标本釉层 1.2 毫米，是多次施釉叠加的结果。釉厚了，光线在釉层内多次折射，积釉处颜色自然更深，凸起处显浅，形成肉眼可见的层次。</p>
+          <p>粉青则相反，釉层偏薄而匀，追求的是整体一致。判断时可以用一个简单办法：把器物对着光源慢慢转动，观察颜色是否随角度出现明显深浅变化。梅子青应当有明显变化，粉青则变化幅度小。如果一只标称梅子青的盏在转动时颜色几乎不动，要么釉太薄，要么施釉不均。</p>
+
+          <h3>三、开片要同时看密度与形成时机</h3>
+          <p>开片是釉与胎收缩率不同造成的裂纹。裂纹本身不是缺陷，反而是很多釉系的评价重点。但开片与开片差别很大，主要看两件事。</p>
+          <ul>
+            <li><b>密度</b>：以每平方厘米的裂纹条数计。1—2 条属疏朗，3—5 条属中等，6 条以上属细密。汝窑蟹爪纹多在 3—5 条区间，哥窑金丝铁线可达 6 级以上。</li>
+            <li><b>时机</b>：出窑冷却阶段开裂的纹路通常较粗、颜色较深；使用中逐渐产生的细纹颜色浅、走向更随性。哥窑金丝铁线的两套纹色，本质上就是两个不同时机的结果。</li>
+          </ul>
+          <p>只看密度不看时机，容易把后期磕碰产生的裂纹当成“开片”。真正的开片纹路沿釉面延伸、边缘不发白，且不会在短时间内突然增加。</p>
+
+          <h3>四、三类釉的横向对照</h3>
+          <div class="compare">
+            <div>
+              <h4>青釉</h4>
+              <p>核心看釉层厚度与积釉层次。温度窗口较宽，1250—1310℃ 均有成功案例。判断失误多发生在把薄釉当厚釉。</p>
+            </div>
+            <div>
+              <h4>铜红釉</h4>
+              <p>核心看呈色均匀度与口沿露白。铜挥发导致成品率低，气氛控制比温度更关键。局部绿斑是常见失败信号。</p>
+            </div>
+            <div>
+              <h4>黑釉天目</h4>
+              <p>核心看析晶形态与斑点边界。降温速率决定毫纹长短与油滴大小，恒温阶段时间过长会使斑点糊连。</p>
+            </div>
+          </div>
+
+          <h3>五、消费策略：先建立参照件，再扩展</h3>
+          <p>釉色判断非常依赖参照。建议先在每一类里选定一件记录完整、参数清晰的标本作为参照件，比如青釉用龙泉梅子青莲瓣盏，黑釉用建窑兔毫束口盏。之后看到同类器物，直接和参照件比釉层厚度、积釉深浅、析晶形态三项，比凭印象判断稳得多。</p>
+          <p>扩展顺序上，建议从单一釉系往深处走，而不是横向铺开。把青釉里的梅子青、粉青、天青三者的差异看透，再去看窑变釉，会更容易理解“气氛”这个变量。反过来先看窑变再看青釉，容易把偶然的呈色当成必然规律。</p>
+          <div class="quote">
+            <p>“同一只盏，上午十点的自然光和下午四点的自然光，釉色能差出一个色阶。档案照片全部标注拍摄时段，就是为了避免这种误判。”</p>
+            <cite>—— 档案拍摄记录说明，2026 年 11 月 18 日</cite>
+          </div>
+        </div>
+      </section>
+
+      <!-- 6. 体验指南 -->
+      <section class="section" id="guide" aria-labelledby="h-guide">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-guide">上手路径：从哪件看起，怎么判断值不值得投入时间</h2>
+            <span class="sub">四步建立自己的釉色判断顺序</span>
+          </div>
+        </div>
+        <div class="steps">
+          <div class="step">
+            <h4>第一步：选一个釉系，别贪多</h4>
+            <p>第一次接触建议从青釉进。青釉标本量大、参数完整，梅子青与粉青的差异有明确的釉层厚度依据，容易建立信心。先看 5—8 件青釉标本，能说出积釉深浅的差别再往下走。</p>
+          </div>
+          <div class="step">
+            <h4>第二步：给每件标本找一个可验证的点</h4>
+            <p>不要停在“好看”。挑一个能验证的点：釉层厚度、开片密度、斑点直径、毫纹长度。带着这个点去看，判断就有了落点，也不容易被照片色调带偏。</p>
+          </div>
+          <div class="step">
+            <h4>第三步：同类横向比，不同类纵向比</h4>
+            <p>同类之间比参数，比如两只兔毫盏比毫纹长度与斑点清晰度；不同类之间比机理，比如青釉和铜红釉比气氛敏感度。两种比法交替用，才不会陷入只看细节。</p>
+          </div>
+          <div class="step">
+            <h4>第四步：用烧成记录反推结果</h4>
+            <p>看到一件呈色特别满意的标本，回头看它的温度曲线与气氛切换点。多数“偶然的好看”背后都有可复述的条件，找到条件比记住颜色更有用。</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- 7. FAQ -->
+      <section class="section" id="faq" aria-labelledby="h-faq">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-faq">常见问答</h2>
+            <span class="sub">围绕釉色判断与标本对比的 6 个高频问题</span>
+          </div>
+        </div>
+        <div class="faq">
+          <details>
+            <summary>梅子青和粉青到底怎么区分？</summary>
+            <div class="ans">先看釉层厚度：梅子青通常多次施釉，釉层在 1 毫米以上，积釉处颜色明显加深；粉青釉层偏薄而匀，整体色差小。再看转动时的颜色变化：梅子青随角度变化明显，粉青变化幅度小。最后看光泽，粉青偏柔和，梅子青更透亮。</div>
+          </details>
+          <details>
+            <summary>建窑兔毫的毫纹是不是越长越好？</summary>
+            <div class="ans">不完全是。毫纹长度主要受降温速率影响，慢降温毫更长，但过长往往伴随毫纹边界发糊。判断标准是毫纹清晰、走向顺直、毫间底色乌黑不发灰。长度在 2—3 厘米区间且边界清晰的，通常比一味求长的更耐看。</div>
+          </details>
+          <details>
+            <summary>第一次接触釉色档案，从哪一件开始看比较好？</summary>
+            <div class="ans">建议从龙泉窑梅子青莲瓣盏开始。它的釉层厚度、施釉次数、烧成温度记录完整，积釉层次肉眼可辨，适合作为青釉的参照件。看完再对照汝窑天青釉开片标本，能较快理解“厚釉呈色”与“开片呈色”是两条不同的评价线。</div>
+          </details>
+          <details>
+            <summary>开片算不算瑕疵？密度多少算正常？</summary>
+            <div class="ans">对多数青釉和哥窑类器物，开片是预期内的釉面特征，不算瑕疵。档案按每平方厘米裂纹条数分 7 级：1—2 条疏朗，3—5 条中等，6 条以上细密。汝窑蟹爪纹多在 3—5 条，哥窑金丝铁线常达 6 级以上。真正需要注意的是裂纹是否在短期内快速增加，那更可能是使用损伤。</div>
+          </details>
+          <details>
+            <summary>祭红和郎窑红有什么区别？</summary>
+            <div class="ans">两者都属铜红釉，差别在呈色分布与口沿处理。祭红追求通体均匀、色调沉稳，口沿常见一线自然露白，称灯草口。郎窑红更强调流动感，釉色自上而下由深转浅，口沿露白更宽，底部常有积釉。判断时看红色是否均匀铺满，以及口沿露白的宽度与过渡是否自然。</div>
+          </details>
+          <details>
+            <summary>同样的釉料配方，为什么两次烧出来颜色不一样？</summary>
+            <div class="ans">主要变量是气氛与窑位。铜红釉对还原气氛极敏感，还原不足会转绿，还原过强则发暗。同一窑内不同位置的温度与气氛也有差异，靠近火口的标本往往呈色更浓。其次是降温速率，它直接影响析晶类釉的斑点与毫纹形态。档案里每件标本都标注窑位与气氛阶段，就是为了让这种差异可追溯。</div>
+          </details>
+        </div>
+      </section>
+
+      <!-- 8. 用户评论 -->
+      <section class="section" id="comments" aria-labelledby="h-cmt">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-cmt">釉友讨论</h2>
+            <span class="sub">14 条近期留言，围绕具体标本与判断方法</span>
+          </div>
+        </div>
+        <div class="cmt-grid">
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">青</span><b>青岚小筑</b><time datetime="2026-11-25">今天 10:12</time></div>
+            <p>梅子青那件的积釉照片拍得很实在，瓣脊和凹处的色差一眼能看出来。之前一直分不清梅子青和粉青，对着这张图转了两圈就明白了。</p>
+            <span class="rel">龙泉窑梅子青莲瓣盏</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a2">窑</span><b>窑火不熄</b><time datetime="2026-11-25">今天 09:03</time></div>
+            <p>兔毫的毫纹测长图有用，但我觉得降温速率那块还能再细一点。我这边慢降温到 3 厘米以上时，毫纹末端就开始糊了，跟档案里说的一致。</p>
+            <span class="rel">建窑兔毫束口盏</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a3">钧</span><b>钧台旧客</b><time datetime="2026-11-24">昨天 22:47</time></div>
+            <p>月白釉洗的玫瑰紫斑位置偏内底，属于比较讨巧的窑位。如果是口沿附近出斑，过渡会更难控制，成品率低不少。</p>
+            <span class="rel">钧窑月白釉圆洗</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a4">开</span><b>开片观察员</b><time datetime="2026-11-24">昨天 20:15</time></div>
+            <p>开片分级表挺实用，但 6 级和 7 级之间的界线有点模糊。我手上那件哥窑数下来大概每平方厘米 7 条，按表算 7 级，可视觉上没觉得比 6 级密多少。</p>
+            <span class="rel">开片密度分级</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a5">天</span><b>天目一盏</b><time datetime="2026-11-24">昨天 18:32</time></div>
+            <p>油滴的斑点直径数据很扎实，60 个样本量够用。我自己烧的一批集中在 0.5—0.7 毫米，和档案区间基本吻合，说明恒温时间是主要抓手。</p>
+            <span class="rel">油滴天目盏</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a6">祭</span><b>祭红难烧</b><time datetime="2026-11-23">11 月 23 日 21:08</time></div>
+            <p>灯草口特写那 0.6 毫米过渡确实关键。我以前总把露白做得太宽，看着像没挂上釉，对照之后收窄了一些，整体观感好很多。</p>
+            <span class="rel">祭红釉玉壶春瓶</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">汝</span><b>汝水边人</b><time datetime="2026-11-23">11 月 23 日 16:40</time></div>
+            <p>天青那件在自然光下的粉调拍出来了，这点很难得。很多照片为了显色会打冷光，反而把天青拍成普通青釉。中性评价：拍得克制。</p>
+            <span class="rel">汝窑天青釉开片标本</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a2">结</span><b>结晶花房</b><time datetime="2026-11-23">11 月 23 日 11:26</time></div>
+            <p>锌结晶的冰花盘，1180℃ 恒温 30 分钟这个数据我试过，确实花形完整。但恒温到 40 分钟花就开始连片，档案里没提上限，建议补一句。</p>
+            <span class="rel">锌结晶釉冰花盘</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a3">甜</span><b>甜白控</b><time datetime="2026-11-22">11 月 22 日 19:55</time></div>
+            <p>甜白压手杯作为白釉参照件很合适。我用它对比过三只卵白釉的盏，偏青还是偏灰一下就看出来了，比自己凭感觉判断可靠。</p>
+            <span class="rel">甜白釉压手杯</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a4">釉</span><b>釉里慢</b><time datetime="2026-11-22">11 月 22 日 14:20</time></div>
+            <p>深度解析里说先建立参照件再扩展，这个思路我认同。之前东看一件西看一件，记了一堆颜色名字，实际判断力没长进。改成盯着青釉看了一个月，反而清楚多了。</p>
+            <span class="rel">深度解析</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a5">哥</span><b>哥窑小记</b><time datetime="2026-11-21">11 月 21 日 22:31</time></div>
+            <p>金丝铁线的两套裂纹时机解释得清楚。不过我觉得粗纹偏黑也可能和后期渗入的茶渍有关，不完全是出窑时就定下的颜色，这一点可以再讨论。</p>
+            <span class="rel">哥窑金丝铁线开片罐</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a6">粉</span><b>粉青不粉</b><time datetime="2026-11-21">11 月 21 日 15:07</time></div>
+            <p>FAQ 里说粉青转动颜色变化幅度小，这点我实测基本符合。但薄釉如果施得不匀，边缘还是会有深浅跳变，不能一概而论。</p>
+            <span class="rel">梅子青与粉青区分</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar">龙</span><b>龙泉复烧人</b><time datetime="2026-11-20">11 月 20 日 20:44</time></div>
+            <p>秋季批次对比那组图看过了，第 14 窑到第 17 窑的色差主要来自还原起始温度。第 16 窑偏深，就是因为还原提前了大约 20 分钟。</p>
+            <span class="rel">龙泉青瓷复烧</span>
+          </div>
+          <div class="cmt">
+            <div class="cmt-top"><span class="avatar a2">看</span><b>看釉的人</b><time datetime="2026-11-19">11 月 19 日 13:18</time></div>
+            <p>整体信息密度不错，就是有些标本的拍摄时段标注还可以更细。上午和下午的自然光差别真的很大，希望以后统一注明具体钟点。</p>
+            <span class="rel">拍摄记录建议</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- 9. 相关资讯 -->
+      <section class="section" id="news" aria-labelledby="h-news">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-news">釉事资讯</h2>
+            <span class="sub">11 月 10 日至 11 月 25 日的 6 条动态</span>
+          </div>
+        </div>
+        <div class="panel">
+          <div class="news">
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/longquan-fushao11/600/400" width="600" height="400" loading="lazy" alt="龙泉青瓷复烧窑炉开窑现场">
+              <div>
+                <h3><a href="/#news">龙泉青瓷复烧秋季批次完成比对，第 16 窑梅子青偏深</a></h3>
+                <time datetime="2026-11-20">2026 年 11 月 20 日</time>
+                <p>第 14 窑至第 17 窑共 96 件试样完成呈色比对，差异主因是还原起始温度提前约 20 分钟，导致积釉处色深增加一个层级。</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/jianyao-yaobian03/600/400" width="600" height="400" loading="lazy" alt="建窑兔毫盏毫纹局部特写">
+              <div>
+                <h3><a href="/#news">建窑兔毫烧成共识更新：降温速率优先于保温时长</a></h3>
+                <time datetime="2026-11-18">2026 年 11 月 18 日</time>
+                <p>多组试样显示，毫纹长度对降温速率的敏感度高于保温时间。慢降温可延长毫纹，但超过一定区间后毫纹末端明显发糊。</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/kaipian-biao07/600/400" width="600" height="400" loading="lazy" alt="开片密度对照表示例">
+              <div>
+                <h3><a href="/#news">开片密度 7 级对照表在陶艺社区引发讨论</a></h3>
+                <time datetime="2026-11-16">2026 年 11 月 16 日</time>
+                <p>讨论焦点集中在 6 级与 7 级的分界，部分实践者建议增加半级过渡，或改用裂纹平均间距替代条数计数。</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/junyao-tonghong22/600/400" width="600" height="400" loading="lazy" alt="钧窑铜红釉斑块分布">
+              <div>
+                <h3><a href="/#news">钧窑铜红斑块形成条件研究公布阶段性数据</a></h3>
+                <time datetime="2026-11-14">2026 年 11 月 14 日</time>
+                <p>研究记录了 42 件试样的斑块位置与窑位关系，靠近火口的样本出斑率明显更高，斑块直径多在 1.5—2.5 厘米区间。</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/jiejing-tai09/600/400" width="600" height="400" loading="lazy" alt="结晶釉析晶花形样本">
+              <div>
+                <h3><a href="/#news">结晶釉低温析晶控制方法公开，恒温上限成关键</a></h3>
+                <time datetime="2026-11-12">2026 年 11 月 12 日</time>
+                <p>锌结晶在 1180℃ 恒温 30 分钟花形最完整，延长至 40 分钟以上出现连片。钛结晶的适宜温度窗口更窄，约在 1150—1170℃。</p>
+              </div>
+            </article>
+            <article class="news-item">
+              <img src="https://picsum.photos/seed/ruyao-tianqing16/600/400" width="600" height="400" loading="lazy" alt="汝窑天青釉面自然光观察">
+              <div>
+                <h3><a href="/#news">汝窑天青釉自然光拍摄规范调整，统一标注时段</a></h3>
+                <time datetime="2026-11-10">2026 年 11 月 10 日</time>
+                <p>新规范要求所有天青釉标本在城市自然光下拍摄，并注明具体钟点与天气，避免人工冷光源导致的色偏误判。</p>
+              </div>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <!-- 10. 相关推荐 -->
+      <section class="section" id="related" aria-labelledby="h-rel">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-rel">相关推荐方向</h2>
+            <span class="sub">8 个延伸方向，按釉系机理与实操环节索引</span>
+          </div>
+        </div>
+        <div class="rec-cloud">
+          <a href="/#deep">还原焰与氧化焰的区别 <small>机理</small></a>
+          <a href="/#deep">厚釉多次施釉工艺 <small>工艺</small></a>
+          <a href="/#featured">兔毫与油滴的析晶差异 <small>对比</small></a>
+          <a href="/#featured">祭红釉呈色失败案例 <small>标本</small></a>
+          <a href="/#deep">蟹爪纹与冰裂纹对照 <small>开片</small></a>
+          <a href="/#guide">釉色判断的参照件选择 <small>方法</small></a>
+          <a href="/#updates">烧成温度曲线记录 <small>记录</small></a>
+          <a href="/#featured">甜白与卵白的白度差异 <small>白釉</small></a>
+        </div>
+      </section>
+
+      <!-- 11. 补充板块：时间线 + 可信度分层 -->
+      <section class="section" id="timeline" aria-labelledby="h-tl">
+        <div class="sec-head">
+          <div>
+            <h2 id="h-tl">档案时间线与可信度分层</h2>
+            <span class="sub">左侧为近期入档顺序，右侧为标本信息核实程度</span>
+          </div>
+        </div>
+        <div class="two-col">
+          <div class="panel">
+            <div class="timeline">
+              <div class="tl-item">
+                <time datetime="2026-11-25">2026-11-25</time>
+                <b>梅子青莲瓣盏釉层厚度修正</b>
+                <p>积釉处实测由 1.1 毫米修正为 1.2 毫米，评分由 9.0 上调至 9.2。</p>
+              </div>
+              <div class="tl-item">
+                <time datetime="2026-11-24">2026-11-24</time>
+                <b>开片密度 7 级分级表上线</b>
+                <p>附汝窑、哥窑、龙泉三类示例照片，每级给出 3 件对照标本。</p>
+              </div>
+              <div class="tl-item">
+                <time datetime="2026-11-22">2026-11-22</time>
+                <b>油滴天目斑点测量数据公开</b>
+                <p>60 个斑点样本，直径区间 0.4—0.9 毫米，边缘清晰度分三级。</p>
+              </div>
+              <div class="tl-item">
+                <time datetime="2026-11-20">2026-11-20</time>
+                <b>龙泉复烧秋季批次对比入档</b>
+                <p>第 14 窑至第 17 窑呈色差异整理为四组，标注还原起始温度。</p>
+              </div>
+              <div class="tl-item">
+                <time datetime="2026-11-18">2026-11-18</time>
+                <b>拍摄时段标注规范补充</b>
+                <p>所有天青釉标本改为自然光拍摄并注明钟点，减少色偏误判。</p>
+              </div>
+            </div>
+          </div>
+          <div class="panel">
+            <div class="tier">
+              <div class="tier-row">
+                <b>甲级</b>
+                <p><b>参数完整</b>：釉层厚度、烧成温度、气氛阶段、窑位四项齐全，且有二次复核记录。可直接作为同类判断的参照件。</p>
+              </div>
+              <div class="tier-row t2">
+                <b>乙级</b>
+                <p><b>参数基本完整</b>：缺少窑位或气氛切换点之一，其余数据可核。适合做趋势参考，不宜单独作为唯一依据。</p>
+              </div>
+              <div class="tier-row t3">
+                <b>丙级</b>
+                <p><b>仅记录外观</b>：以釉面照片与目测描述为主，温度与配方信息不全。适合扩展视野，判断时需结合其他标本。</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+
+    <!-- 右栏：辅助 -->
+    <aside class="rail-r" aria-label="补充信息">
+      <div class="rail-box">
+        <p class="rail-title">本 周 热 榜</p>
+        <ol class="rank-list">
+          <li><a href="/#featured">汝窑天青釉开片标本<em>热度 2,115 · 9.4 分</em></a></li>
+          <li><a href="/#featured">龙泉窑梅子青莲瓣盏<em>热度 1,846 · 9.2 分</em></a></li>
+          <li><a href="/#featured">哥窑金丝铁线开片罐<em>热度 1,733 · 9.1 分</em></a></li>
+          <li><a href="/#featured">建窑兔毫束口盏<em>热度 1,602 · 8.9 分</em></a></li>
+          <li><a href="/#featured">钧窑月白釉圆洗<em>热度 1,477 · 9.0 分</em></a></li>
+          <li><a href="/#featured">祭红釉玉壶春瓶<em>热度 1,358 · 8.7 分</em></a></li>
+          <li><a href="/#featured">油滴天目盏<em>热度 1,290 · 8.8 分</em></a></li>
+          <li><a href="/#featured">锌结晶釉冰花盘<em>热度 1,104 · 8.5 分</em></a></li>
+        </ol>
+      </div>
+      <div class="rail-box">
+        <p class="rail-title">近 期 入 档</p>
+        <nav class="chan-list" aria-label="近期入档条目">
+          <a href="/#updates">梅子青釉层复核</a>
+          <a href="/#updates">兔毫毫纹测长</a>
+          <a href="/#updates">开片分级对照表</a>
+          <a href="/#updates">月白釉斑块记录</a>
+          <a href="/#updates">结晶釉独立频道</a>
+          <a href="/#updates">油滴斑点数据</a>
+        </nav>
+      </div>
+      <div class="rail-box">
+        <p class="rail-title">判 断 要 素</p>
+        <nav class="chan-list" aria-label="判断要素导航">
+          <a href="/#deep">呈色机理</a>
+          <a href="/#deep">釉层厚度</a>
+          <a href="/#deep">开片密度</a>
+          <a href="/#deep">析晶形态</a>
+          <a href="/#guide">参照件选择</a>
+        </nav>
+      </div>
+    </aside>
+
+  </div>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <svg viewBox="0 0 48 48" aria-hidden="true">
+          <defs>
+            <linearGradient id="lg2" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0" stop-color="#6f8a7e"/>
+              <stop offset="1" stop-color="#b4552f"/>
+            </linearGradient>
+          </defs>
+          <circle cx="24" cy="24" r="21" fill="url(#lg2)"/>
+          <circle cx="24" cy="24" r="21" fill="none" stroke="#f3ece2" stroke-opacity=".35" stroke-width="1.2"/>
+          <path d="M12 30c4-9 12-14 24-15" fill="none" stroke="#f3ece2" stroke-opacity=".7" stroke-width="1.6" stroke-linecap="round"/>
+          <path d="M14 35c6-6 13-9 21-9" fill="none" stroke="#ffe6a8" stroke-opacity=".75" stroke-width="1.4" stroke-linecap="round"/>
+        </svg>
+        <b>色釉釉网站进入</b>
+      </div>
+      <p class="foot-desc">以实物标本为单位记录陶瓷釉色：窑口、烧成温度、釉层厚度、开片密度与析晶形态逐项标注，供陶艺实践者与器物收藏者对照判断。</p>
+
+      <div class="foot-col">
+        <h4>釉 系</h4>
+        <ul>
+          <li><a href="/#categories">青釉</a></li>
+          <li><a href="/#categories">窑变釉</a></li>
+          <li><a href="/#categories">铜红釉</a></li>
+          <li><a href="/#categories">黑釉天目</a></li>
+          <li><a href="/#categories">结晶釉</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>档 案</h4>
+        <ul>
+          <li><a href="/#featured">精选标本</a></li>
+          <li><a href="/#updates">最新更新</a></li>
+          <li><a href="/#deep">深度解析</a></li>
+          <li><a href="/#timeline">可信度分层</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h4>参 与</h4>
+        <ul>
+          <li><a href="/#guide">上手路径</a></li>
+          <li><a href="/#faq">常见问答</a></li>
+          <li><a href="/#comments">釉友讨论</a></li>
+          <li><a href="/#news">釉事资讯</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 色釉釉网站进入 · 釉色档案整理与标本记录</span>
+      <span>档案数据截至 2026-11-25 · 评分与热度为站内示例统计</span>
+      <p class="foot-note">本站内容为釉色标本的记录与对比整理，涉及器物特征描述均以档案记录为准；不同窑口、批次的实际呈色存在差异，判断时请结合实物观察。</p>
+    </div>
+  </div>
+</footer>
+
+<script>
+(function(){
+  "use strict";
+
+  /* 移动端菜单 */
+  var menuBtn = document.getElementById('menuBtn');
+  var mainNav = document.getElementById('mainNav');
+  if(menuBtn && mainNav){
+    menuBtn.addEventListener('click', function(){
+      var open = mainNav.classList.toggle('open');
+      menuBtn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      menuBtn.setAttribute('aria-label', open ? '收起导航菜单' : '展开导航菜单');
+    });
+    mainNav.addEventListener('click', function(e){
+      if(e.target.tagName === 'A'){
+        mainNav.classList.remove('open');
+        menuBtn.setAttribute('aria-expanded','false');
+      }
+    });
+  }
+
+  /* 站内查找：筛出可见内容块 */
+  var input = document.getElementById('siteSearch');
+  var note = document.getElementById('searchNote');
+  var sections = Array.prototype.slice.call(document.querySelectorAll('.section'));
+  var cards = Array.prototype.slice.call(document.querySelectorAll('.card, .upd, .cat, .cmt, .news-item, .tl-item, .rec-cloud a, .rank-list li'));
+
+  function clearFilter(){
+    cards.forEach(function(el){ el.style.display = ''; });
+    note.classList.remove('on');
+    note.textContent = '';
+  }
+
+  function runFilter(q){
+    q = q.trim().toLowerCase();
+    if(!q){ clearFilter(); return; }
+    var hit = 0;
+    cards.forEach(function(el){
+      var text = (el.textContent || '').toLowerCase();
+      var match = text.indexOf(q) !== -1;
+      el.style.display = match ? '' : 'none';
+      if(match) hit++;
+    });
+    if(hit === 0){
+      cards.forEach(function(el){ el.style.display = ''; });
+      note.classList.add('on');
+      note.textContent = '没有找到与“' + q + '”匹配的标本、条目或讨论，已恢复全部内容。可试试「梅子青」「兔毫」「开片」等釉色词。';
+    }else{
+      note.classList.add('on');
+      note.textContent = '已筛出 ' + hit + ' 条与“' + q + '”相关的内容，清空搜索框可恢复全部。';
+    }
+  }
+
+  if(input){
+    var timer = null;
+    input.addEventListener('input', function(){
+      clearTimeout(timer);
+      var v = input.value;
+      timer = setTimeout(function(){ runFilter(v); }, 180);
+    });
+    input.addEventListener('keydown', function(e){
+      if(e.key === 'Escape'){ input.value = ''; clearFilter(); }
+    });
+  }
+
+  /* 点击频道/分类标签，滚动并高亮 */
+  document.querySelectorAll('.chan-list a').forEach(function(a){
+    a.addEventListener('click', function(){
+      if(a.classList.contains('on')) return;
+      document.querySelectorAll('.chan-list a.on').forEach(function(x){ x.classList.remove('on'); });
+    });
+  });
+})();
+</script>
+</body>
+            </html>
